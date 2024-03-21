@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with Javascript</title>
+</head>
+<body>
+    <h1>Fun with Javascript</h1>
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <script src="closure.js"></script>
+    <script>
+        //Example of closure
+        function colorHandler(color) {
+            return function () {
+                document.body.style.backgroundColor= `${color}`
+            }
+        }
+        document.getElementById('red').onclick = colorHandler('red')
+        document.getElementById('green').onclick = colorHandler('green')
+    </script>
+</body>
+</html>
