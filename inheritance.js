@@ -5,16 +5,16 @@ const object = {
     city: "Bangalore",
     phone: "54556454",
     getInfo: function () {
-        console.log(this.name)
         console.log(`${this.name}  from  ${this.city}`)
     }
 }
 
 const object2 = {
     name: "Kumar",
-    city: "Patna"
+    city: "Patna",
+    __proto__:object
 }
 
-object2.__proto__ = object
+// object2.__proto__ = object
 
 console.log(object2.getInfo())
