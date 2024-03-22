@@ -7,18 +7,18 @@
 </head>
 <body>
     <h1>Fun with Javascript</h1>
-    <button id="red">Red</button>
-    <button id="green">Green</button>
-    <script src="prototype.js"></script>
+    <!-- <button id="red">Red</button>
+    <button id="green">Green</button> -->
+    <script src="high_order_function.js"></script>
     <script>
         //Example of closure
-        function colorHandler(color) {
-            return function () {
-                document.body.style.backgroundColor= `${color}`
-            }
-        }
-        document.getElementById('red').onclick = colorHandler('red')
-        document.getElementById('green').onclick = colorHandler('green')
+        // function colorHandler(color) {
+        //     return function () {
+        //         document.body.style.backgroundColor= `${color}`
+        //     }
+        // }
+        // document.getElementById('red').onclick = colorHandler('red')
+        // document.getElementById('green').onclick = colorHandler('green')
     </script>
 </body>
 </html>
